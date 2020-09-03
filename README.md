@@ -17,3 +17,13 @@ Current demo can be seen [here](https://unsoundscapes.itch.io/flatris).
 2. Clone this repo and `cd` into it
 3. Run `elm make src/Main.elm --output elm.js`
 4. Open `index.html` in the browser
+
+
+## Fission deploy
+To deploy it on [Fission](https://fission.codes/), you only need to do some simple steps:
+
+* Clone this project and change the branch to `dev`
+* Verify that the `Main.elm` was changed to `Flatris.elm` due to an issue in the original code
+* Init your node in [IPFS](https://ipfs.io/) with `ipfs daemon &` on another tab
+* Run `fission app-init` inside the folder of the flatris project
+* Run `fission up`, and its done!
